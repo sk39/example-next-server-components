@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import ClientCounter from '../components/client-counter.client'
+import ServerTimer from '../components/server-timer.server'
 
 const RscPage: NextPage = ({}) => {
   return (
@@ -7,9 +8,7 @@ const RscPage: NextPage = ({}) => {
       <h1 className="page-title">Example Server Components</h1>
       <div className="flex-container">
         <ClientCounter />
-      </div>
-      <div>
-        <a href="/rsc">サーバコンポーネントへ</a>
+        <ServerTimer />
       </div>
     </main>
   )
